@@ -4,11 +4,13 @@
 
 /MBMS_APP/bin
 /.vs
-/MBMS_APP.DataAccess/bin
-/MBMS_APP.DataAccess/obj
-/MBMS_APP.Framework/bin
-/MBMS_APP.Framework/obj
-/MBMS_APP.Busines/obj
-/MBMS_APP.Busines/bin
+/MBMS_APP.DataAccess/bin/Debug/
+/MBMS_APP.DataAccess/obj/Debug/
+/MBMS_APP.Framework/bin/Debug/
+/MBMS_APP.Framework/obj/Debug/
+/MBMS_APP.Busines/obj/Debug/
+/MBMS_APP.Busines/bin/Debug/
 /packages
 MBMS_APP/obj
+MBMS_APP/obj/Debug/
+MBMS_APP/bin/Debug/
