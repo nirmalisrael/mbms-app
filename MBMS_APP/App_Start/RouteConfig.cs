@@ -15,6 +15,7 @@ namespace MBMS_APP
             routes.EnableFriendlyUrls(settings);
 
             routes.MapPageRoute("Admin Dashboard", "admin-dashboard", "~/WebUI/Dashboard/Dashboard.aspx");
+            routes.MapPageRoute("Purchase Orders", "purchase-orders", "~/WebUI/Purchase/Orders.aspx");
         }
     }
 }

@@ -235,6 +235,7 @@
     <Content Include="assets\vendor\fonts\fonts\boxicons.ttf" />
     <Content Include="assets\vendor\fonts\fonts\boxicons.woff" />
     <Content Include="assets\vendor\fonts\fonts\boxicons.woff2" />
+    <Content Include="WebUI\Purchase\Orders.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -330,6 +331,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUI\Purchase\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Purchase\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
