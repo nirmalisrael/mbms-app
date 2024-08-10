@@ -93,7 +93,7 @@
                     <ul class="menu-inner py-1">
                         <!-- Dashboard -->
                         <li class="menu-item active">
-                            <a href="index.html" class="menu-link">
+                            <a href="/admin-dashboard" class="menu-link">
                                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                                 <div data-i18n="Analytics">Dashboard</div>
                             </a>
@@ -156,7 +156,7 @@
                             </a>
                             <ul class="menu-sub">
                                 <li class="menu-item">
-                                    <a href="/admin-dashboard" class="menu-link">
+                                    <a href="/purchase-orders" class="menu-link">
                                         <div data-i18n="Orders">Orders</div>
                                     </a>
                                 </li>
@@ -376,5 +376,8 @@
     <script src="<%= ResolveUrl("~/assets/js/dashboards-analytics.js") %>"></script>
     <script src="<%= ResolveUrl("~/WebUI/Admin/js/DeleteAdminConfirmation.js") %>"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="<%= ResolveUrl("~/assets/js/custom.js") %>"></script>
+    <link href="assets/css/custom.css" rel="stylesheet" />
 </body>
 </html>
