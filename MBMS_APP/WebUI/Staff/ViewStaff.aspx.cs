@@ -36,10 +36,27 @@ namespace MBMS_APP.WebUI.Staff
             }
         }
 
+        protected void ddlPageSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            gvUsers.PageSize = ConversionHelper.ToInt32(ddlPageSize.SelectedValue);
+            BindData();
+        }
         protected void gvUsers_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            gvUsers.PageIndex = e.NewPageIndex;
-            BindData();
+            if (e.NewPageIndex > 0)
+            {
+                gvUsers.PageIndex = e.NewPageIndex;
+                BindData();
+                GridViewRow pagerRow = gvUsers.BottomPagerRow;
+                if (pagerRow != null)
+                {
+                    Label lblCurrentPage = (Label)pagerRow.FindControl("lblCurrentPage");
+                    if (lblCurrentPage != null)
+                    {
+                        lblCurrentPage.Text = (e.NewPageIndex + 1).ToString();
+                    }
+                }
+            }
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
@@ -64,7 +81,7 @@ namespace MBMS_APP.WebUI.Staff
             }
             else
             {
-                BindData(); 
+                BindData();
             }
         }
     }

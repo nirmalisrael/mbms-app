@@ -44,3 +44,6 @@ MBMS_APP/bin/Debug/
 /MBMS_APP/obj/Debug/MBMS_APP.pdb
 /MBMS_APP/.vs
 /MBMS_APP/obj/Debug/MBMS_APP.csproj.AssemblyReference.cache
+/UpgradeLog.htm
+/UpgradeLog2.htm
+/.gitignore
