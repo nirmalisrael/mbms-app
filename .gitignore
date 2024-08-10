@@ -44,3 +44,6 @@ MBMS_APP/bin/Debug/
 /MBMS_APP/obj/Debug/MBMS_APP.pdb
 /MBMS_APP/.vs
 /MBMS_APP/obj/Debug/MBMS_APP.csproj.AssemblyReference.cache
+/MBMS_APP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/MBMS_APP/obj/Debug/MBMS_APP.csproj.AssemblyReference.cache
+*.htm
