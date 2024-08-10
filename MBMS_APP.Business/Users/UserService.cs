@@ -45,12 +45,14 @@ namespace MBMS_APP.Business.Users
             }
         }
 
-        public DataTable GetStaffAndAdmin()
+        public DataTable GetStaffAndAdmin(int userId = 0, int roleId = 1)
         {
             DataTable dataTable = new DataTable();
             try
             {
-                dataTable = sQLServerHandler.ExecuteTable("[mbms].[sp_GetStaffAndAdmin]", null);
+                SqlParameter[] param = { new SqlParameter("@RoleId", roleId)};
+
+                dataTable = sQLServerHandler.ExecuteTable("[mbms].[sp_GetStaffAndAdmin]", param);
             }
             catch (Exception ex)
             {
@@ -75,18 +77,20 @@ namespace MBMS_APP.Business.Users
             return dataTable;
         }
 
-        public void DeleteUserDetails(int userId)
+        public int DeleteUserDetails(int userId)
         {
+            int result = 0;
             try
             {
                 SqlParameter[] param = { new SqlParameter("@UserId", userId),
                 new SqlParameter("@ModifiedBy",1)};
-                sQLServerHandler.ExecuteNonQuery("[mbms].[sp_DeleteUserDetails]", param);
+               result = sQLServerHandler.ExecuteNonQuery("[mbms].[sp_DeleteUserDetails]", param);
             }
             catch (Exception ex)
             {
                 new ErrorLog().WriteLog(ex);
             }
+            return result;
         }
 
         public DataSet GetRolesAndOrganization()
