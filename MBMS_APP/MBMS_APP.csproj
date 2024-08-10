@@ -235,6 +235,8 @@
     <Content Include="assets\vendor\fonts\fonts\boxicons.ttf" />
     <Content Include="assets\vendor\fonts\fonts\boxicons.woff" />
     <Content Include="assets\vendor\fonts\fonts\boxicons.woff2" />
+    <Content Include="WebUI\Member\AddMember.aspx" />
+    <Content Include="WebUI\Member\Member.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -331,6 +333,20 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebUI\Member\AddMember.aspx.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Member\AddMember.aspx.designer.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUI\Member\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Member\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -345,6 +361,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MBMS_APP.Business\MBMS_APP.Business.csproj">
+      <Project>{DCBF6271-D12C-4F60-9290-F6A3CABF2ACC}</Project>
+      <Name>MBMS_APP.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MBMS_APP.Framework\MBMS_APP.Framework.csproj">
+      <Project>{91BDFD7D-37F7-48EA-ACF6-0BF34FECD677}</Project>
+      <Name>MBMS_APP.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
