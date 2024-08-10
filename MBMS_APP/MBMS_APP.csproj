@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\demo.css" />
     <Content Include="assets\img\avatars\1.png" />
     <Content Include="assets\img\avatars\5.png" />
@@ -145,6 +146,7 @@
     <Content Include="assets\img\layouts\layout-without-menu-light.png" />
     <Content Include="assets\img\layouts\layout-without-navbar-light.png" />
     <Content Include="assets\js\config.js" />
+    <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\dashboards-analytics.js" />
     <Content Include="assets\js\extended-ui-perfect-scrollbar.js" />
     <Content Include="assets\js\form-basic-inputs.js" />
@@ -353,6 +355,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MBMS_APP.Business\MBMS_APP.Business.csproj">
+      <Project>{dcbf6271-d12c-4f60-9290-f6a3cabf2acc}</Project>
+      <Name>MBMS_APP.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MBMS_APP.Framework\MBMS_APP.Framework.csproj">
+      <Project>{91bdfd7d-37f7-48ea-acf6-0bf34fecd677}</Project>
+      <Name>MBMS_APP.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
