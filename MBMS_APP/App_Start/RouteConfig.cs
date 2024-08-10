@@ -13,6 +13,9 @@ namespace MBMS_APP
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+            routes.MapPageRoute("Member", "member", "~/WebUI/Member/Member.aspx");
+            routes.MapPageRoute("Add Member", "add-member", "~/WebUI/Member/AddMember.aspx");
         }
     }
 }
