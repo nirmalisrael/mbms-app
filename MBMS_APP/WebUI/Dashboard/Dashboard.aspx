@@ -40,7 +40,7 @@
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
                                             <img
-                                                src=<%= ResolveUrl("assets/img/icons/unicons/chart-success.png") %>
+                                                src=<%= ResolveUrl("~/assets/img/icons/unicons/chart-success.png") %>
                                                 alt="chart success"
                                                 class="rounded" />
                                         </div>

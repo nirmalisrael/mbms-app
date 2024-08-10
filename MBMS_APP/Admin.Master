@@ -327,5 +327,8 @@
     <script src="<%= ResolveUrl("~/assets/js/main.js") %>" defer></script>
     <script src="<%= ResolveUrl("~/assets/js/dashboards-analytics.js") %>"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="<%= ResolveUrl("~/assets/js/custom.js") %>"></script>
+    <link href="assets/css/custom.css" rel="stylesheet" />
 </body>
 </html>
